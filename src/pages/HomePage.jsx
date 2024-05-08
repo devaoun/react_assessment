@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import ListItem from "../components/ListItem"
+import { useNavigate } from "react-router-dom"
 
 function HomePage() {
     const [allData, setAllData] = useState([])
     const [title, setTitle] = useState('')
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         getData();
@@ -43,6 +46,10 @@ function HomePage() {
         setTitle('')
     }
 
+    const clickLogout = () => {
+        navigate('/')
+    }
+
     return (
         <>
             <div className="homePage">
@@ -66,7 +73,7 @@ function HomePage() {
                             />
                         ))}
                     </ul>
-                    <button className="logout_button">LOG OUT</button>
+                    <button className="logout_button" onClick={clickLogout}>LOG OUT</button>
                 </div>
             </div>
         </>
