@@ -45,7 +45,7 @@ Please follow these conditions before code!
 
 #### https://documenter.getpostman.com/view/11730979/2sA3JJA3uG
 
-```js
+js
 // You can use this function for getMe
 async function getMe() {
   let token; // get token from somewhere
@@ -57,7 +57,6 @@ async function getMe() {
   const data = await res.json();
   console.log(data);
 }
-```
 
 # Example UI For Todo List
 

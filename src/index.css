@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginPage{
+  width: 505px;
+  height: 650px;
+}
+
+.loginPage_active{
+  width: 505px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E1F25;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 50px;
+  position: relative;
+}
+
+.loginPage h1{
+  font-weight: 800;
+  font-size: 56px;
+  margin: 30px;
+  color: white;
+  margin-bottom: 70px;
+}
+
+.loginPage label{
+  font-size: 24px;
+  color: gray;
+}
+
+.loginPage input{
+  margin-bottom: 20px;
+  color: gray;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #29292F;
+  background-color: transparent;
+}
+
+.loginPage button{
+  border-radius: 24px;
+  height: 62px;
+  margin-top: 150px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+}
+
+/* =============================================================== */
+
+.homePage{
+  width: 505px;
+  height: 650px;
+  color: white;
+}
+
+.homePage input{
+  border: none;
+  font-size: 24px;
+  font-weight: 100;
+  border-bottom: 2px solid gray;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.homePage_head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.homePage h1{
+  font-weight: 800;
+  font-size: 56px;
+  margin: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.homePage_active{
+  width: 505px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E1F25;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 50px;
+  position: relative;
+}
+
+.homePage_active form > input {
+  width: 100%;
+}
+
+.logout_button{
+  border-radius: 24px;
+  height: 62px;
+  margin-top: 150px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+}
+
+.homePage li{
+  list-style: none;
+}
+
+.list_item{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.list_item input{
+  margin-right: 10px;
+}
+
+.list_item button{
+  background-color: transparent;
+  color: white;
+  border: none;
+}
