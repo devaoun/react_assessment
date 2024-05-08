@@ -65,7 +65,7 @@ function HomePage() {
                     <ul className="home_todoList">
                         {allData.map(item => (
                             <ListItem 
-                            key={item.id} 
+                            key={item.id}
                             status={item.status}
                             todoID={item.id} 
                             title={item.title}
